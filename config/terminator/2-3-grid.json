@@ -1,0 +1,36 @@
+{
+	"layout": {
+        "vertical": false,
+		"tab1": [
+			{
+                "ratio": 0.7,
+				"children": [
+					{
+						"command": "bpytop;neofetch;bash"
+					},
+					{
+						"command": "neofetch;sleep 6;man urxvt;bash"
+					}
+				]
+			},
+			{
+				"children": [
+					{
+						"command": "pyradio -p 16;bash",
+                        "ratio": 0.6
+					},
+					{
+						"command": "cava;bash",
+                        "ratio": 0.4
+					},
+					{
+						"command": "theme.sh -i2;bash"
+					}
+				]
+			}
+		]
+	},
+	"profile": {
+        "font": "JetBrains Mono NL Regular 9"
+	}
+}

@@ -1,0 +1,147 @@
+configuration {
+  font:            "JetBrainsMono 9";
+  icon-theme:      "Zafiro-Green";
+  fixed-num-lines: true;
+  show-icons:      true;
+  sidebar-mode:    true;
+  scroll-method:   0;
+  window-format:   "[{w:1}] {w}";
+  click-to-exit:   true;
+
+  modi:           "drun,window,ssh,combi";
+  display-window: "";
+  display-run:    "";
+  display-ssh:    "";
+  display-drun:   "";
+  display-combi:  "";
+}
+
+* {
+  lightblue: #202020;
+  darkblue : #202020;
+  red      : #bf616a;
+  orange   : #d08770;
+  yellow   : #C1BD53;
+  green    : #E7E6C7;
+  white    : #eceff4;
+  black    : #151515;
+}
+
+
+window {
+    transparency:     "real";
+    background-color: #151515;
+    border:           0px;
+    border-radius:    5px;
+    width:            400px;
+    location:         center;
+    anchor:           center;
+    x-offset:         -710;
+    y-offset:         -240;
+}
+
+scrollbar {
+  border:       0px;
+  handle-color: @green;
+  handle-width: 8px;
+  padding:      0;
+}
+
+prompt {
+  spacing:    0;
+  border:     0;
+  text-color: @yellow;
+  margin: 0 5px 0 0;
+}
+textbox-prompt-colon {
+  expand:     false;
+  str:        "";
+  margin:     0px 5px 0px 0px;
+  text-color: inherit;
+}
+entry {
+  spacing:           0;
+  text-color:        @green;
+  placeholder-color: @lightblue;
+}
+case-indicator {
+  spacing:    0;
+  text-color: @green;
+}
+inputbar {
+  spacing:    0px;
+  text-color: @green;
+  margin:     10px 0 5px 10px;
+  children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+
+listview {
+  lines:        7;
+  columns:      1;
+  fixed-height: 0;
+  border:       0px;
+  spacing:      10px;
+  scrollbar:    false;
+  margin:       20px 0px;
+}
+
+element {
+  border:        0px;
+  border-radius: 5px;
+  padding:       10px;
+}
+element-icon {
+  margin: 0px 5px 0px 0px;
+}
+element normal.normal,
+element alternate.normal {
+  background-color: #151515aa;
+  text-color:       @green;
+}
+element normal.urgent,
+element alternate.urgent {
+  background-color: #151515aa;
+  text-color:       @red;
+}
+element normal.active,
+element alternate.active {
+  background-color: #151515aa;
+  text-color:       @yellow;
+}
+element selected.normal {
+  background-color: @darkblue;
+  text-color:       @yellow;
+}
+element selected.urgent {
+  background-color: @red;
+  text-color:       @green;
+}
+element selected.active {
+  background-color: @darkblue;
+  text-color:       @green;
+}
+
+mode-switcher {
+  padding: 0px 5px;
+}
+button {
+  horizontal-align: 0.5;
+  vertical-align:   0.5;
+  background-color: @darkblue;
+  margin:           5px;
+  padding:          5px;
+  text-color:       @yellow;
+  border:           0px;
+  border-radius:    5px;
+}
+button selected {
+  background-color: @darkblue;
+}
+
+message {
+  border:  0px;
+  padding: 0px 10px;
+}
+textbox {
+  text-color: @green;
+}

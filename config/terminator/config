@@ -1,0 +1,24 @@
+[global_config]
+  dbus = False
+  inactive_color_offset = 0.5064102564102564
+  enabled_plugins = ,
+  title_font = JetBrains Mono NL 9
+[keybindings]
+[profiles]
+  [[default]]
+    background_darkness = 0.9
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = JetBrains Mono NL 9
+    show_titlebar = False
+    scrollbar_position = hidden
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]

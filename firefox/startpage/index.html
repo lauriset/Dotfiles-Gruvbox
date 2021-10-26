@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Home</title>
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #A58E34;
+}
+body {
+	background-color: #202020;
+	background-image: url(img/bg.jpg);
+	background-repeat: repeat-x;
+	margin-top: 0px;
+}
+a:link {
+	color: #A58E34;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #A58E34;
+}
+a:hover {
+	text-decoration: none;
+	color: #A58E34;
+}
+a:active {
+	text-decoration: none;
+	color: #A58E34;
+}
+#head {
+	width:593px;
+	height:108px;
+	margin:0px auto;
+	background:url(img/search_bg.png) no-repeat;
+}
+#home {
+	width:198px;
+	height:150px;
+	margin:0px auto;
+	padding-top:70px;
+	padding-bottom:0px;
+}
+#date {
+	width:200px;
+	height:80px;
+	margin:0px auto;;
+	padding-top:50px;
+    padding: 25px 35px 0.1em 37px;
+    background-color: #202020;
+    border-radius: 6px;
+	text-align:center;
+	font-family:"Vrinda";
+	text-transform:uppercase;
+	font-size:28px;
+	color: #A58E34;
+}
+#month {
+	font-size:18px;
+	color: #E7E6C7;
+	text-align:center;
+	text-transform:uppercase;
+}
+#navcontainer
+{
+width: 150px;
+padding:90px;
+margin:0px auto;
+color: #202020;
+}
+
+#navcontainer ul
+{
+list-style: none;
+margin: 60;
+padding: 0;
+border: none;
+}
+
+#navcontainer li
+{
+margin-bottom:8px;
+}
+
+#navcontainer li a
+{
+display: block;
+padding: 5px 5px 5px 0.5em;
+background-color: #202020;
+border-radius: 6px;
+color: #5B5021;
+text-decoration: none;
+text-align:center;
+text-transform:uppercase;
+width: 100%;
+cursor: pointer;
+color: #A58E34;
+}
+
+html>body #navcontainer li a { width: auto; }
+
+#navcontainer li a:hover
+{
+background-color: #202020;
+color: #E7E6C7;
+}
+.search {
+	padding-left:50px;
+	padding-top:25px;
+	width:390px;
+	height:20px;
+}
+.bar {
+	color: #E7E6C7;
+	width:490px;
+	height:30px;
+	background: #202020;
+	border:2px;
+    border-color: #A58E34;
+    border-radius: 6px;
+}
+-->
+</style></head>
+
+<body>
+<div id="head">
+<div class="search">
+<form method="get" action="http://www.duckduckgo.com/search"><input class="bar" name="q" type="text" maxlength="255" value="" title="Duckduckgo">
+</form>
+</div>
+</div>
+<div id="date"><script language="Javascript">
+
+ var dayName = new Array ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+
+ var monName = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
+
+ var now = new Date
+
+ document.write("" + dayName[now.getDay()] + "<br><span id=month>" + monName[now.getMonth()] + " "+now.getDate() +"")
+ </script>
+</div>
+<div id="home"><img src="img/home.png" width="200" height="150" /></div>
+<div id="navcontainer">
+<ul id="navlist">
+<li id="active"><a href="http://www.deviantart.com/">Deviantart</a></li>
+<li><a href="http://www.reddit.com/r/unixporn/new/">Unixporn</a></li>
+<li><a href="https://www.facebook.com/groups/linuxart/?_rdc=1&_rdr/">Linuxart</a></li>
+<li><a href="http://github.com/lauriset/">Github</a></li>
+<li><a href="https://www.youtube.com/">Youtube</a></li>
+</ul>
+</div>
+</body>
+</html>

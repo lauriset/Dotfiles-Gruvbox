@@ -1,0 +1,64 @@
+# Dunst Config - Light
+# --------------------
+
+[global]
+monitor = 0
+follow = mouse
+geometry = "300x6-50+80"
+indicate_hidden = yes
+shrink = yes
+transparency = 0
+separator_height = 2
+padding = 8
+horizontal_padding = 13
+frame_width = 8
+frame_color = "#151515"
+separator_color = "#282828"
+sort = no
+idle_threshold = 120
+font = JetBrainsMono Nerd Font 8
+line_height = 0
+markup = full
+format = "<b>%s</b>\n<i>%b</i>"
+alignment = left
+show_age_threshold = 60
+word_wrap = yes
+ignore_newline = no
+stack_duplicates = false
+hide_duplicate_count = yes
+show_indicators = yes
+icon_position = left
+sticky_history = no
+history_length = 20
+browser = chromium
+always_run_script = true
+title = Dunst
+class = Dunst
+corner_radius = 8
+icon_path = /usr/share/icons/Zafiro/actions/48x48/:/usr/share/icons/Zafiro/apps/48x48/:/usr/share/icons/Zafiro/devices/48x48/:/usr/share/icons/Zafiro/emblems/48x48/:/usr/share/icons/Zafiro/emotes/48x48/:/usr/share/icons/Zafiro/mimetypes/48x48/:/usr/share/icons/Zafiro/places/48x48/:/usr/share/icons/Zafiro/status/48x48/
+
+mouse_left_click = close_current
+mouse_middle_click = do_action
+mouse_right_click = close_all
+
+[shortcuts]
+close = ctrl+space
+close_all = ctrl+shift+space
+history = ctrl+Escape
+context = ctrl+shift+period
+
+[urgency_low]
+timeout = 30
+background = "#151515"
+foreground = "#E7E6C7"
+
+[urgency_normal]
+timeout = 30
+background = "#151515"
+foreground = "#E7E6C7"
+
+[urgency_critical]
+timeout = 0
+background = "#151515"
+foreground = "#CAC4BD"
+

@@ -1,0 +1,23 @@
+^sep()
+#Atajos del teclado, ^pipe(jgkeys-pipe),key_bindings
+Atajos del teclado, mbhelper -s,key_bindings
+^sep()
+Capturar Pantalla,mb-jgtools screenshot,emblem-photos
+
+^sep()
+Bloquear pantalla,mbscreenlocker,system-lock-screen
+
+^sep()
+Salir...,mb-jgtools mblogout,system-shutdown
+
+^tag(settings)
+. ~/.config/mabox/settings.csv
+
+^sep(Ayuda)
+Mabox User Guide (online),^checkout(userguide),distributor-logo-mabox
+Mabox Forum,exo-open --launch WebBrowser https://forum.maboxlinux.org/,distributor-logo-mabox
+
+^tag(userguide)
+. /usr/share/mb-jgtools/userguide.csv
+
+. ~/.config/mabox/settings_tags.csv

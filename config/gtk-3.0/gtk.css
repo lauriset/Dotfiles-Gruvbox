@@ -1,0 +1,119 @@
+*:not(.path-bar-button):not(.rubberband):not(separator) {
+	border: none;
+}
+
+.thunar * statusbar {
+	margin-bottom: 0px
+}
+
+.thunar location-toolbar {
+	margin-right: 0px;
+	margin-top: 0px
+}
+.thunar location-toolbar * widget box entry {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.thunar location-toolbar {
+	margin-left: 60px;
+}
+
+
+.thunar > grid {
+	margin-top: -64px;
+}
+
+.thunar * statusbar {
+	margin-bottom: 0px
+}
+
+
+
+.thunar {
+    background: rgba(0, 0, 0, 0.2);
+    background-size: 100% 100%;
+}
+
+
+
+.thunar .view,
+.thunar widget:not(:selected),
+.thunar .sidebar,
+.thunar .standard-view {
+ background-color: rgba(0, 0, 0, 0.1);
+ color: #58C05C;
+}
+
+.thunar image,
+.thunar widget,
+.thunar label {
+    color: #141417;
+}
+
+.thunar * .path-bar-button:checked {
+    border-image: radial-gradient(circle closest-corner at center calc(100% - 1px), #fff 100%, transparent 0%) 0 0 2/0 0 2px;
+}
+
+
+
+
+.thunar #location-toolbar {
+	margin-top: 0px;
+}
+
+.thunar .sidebar .view {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.thunar > grid paned {
+    margin-left: -3px;
+}
+
+.thunar > grid paned grid {
+    margin-left: 4px;
+}
+
+
+ {
+    font-weight: Bold;
+}
+
+.thunar .standard-view,
+.thunar .sidebar {
+	padding: 15px;
+}
+
+.thunar paned separator {
+	border-left: 0px solid rgba(0, 0, 0, 0.2);
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.thunar separator {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.thunar .sidebar treeview {
+	padding-bottom: 1px;
+	padding-top: 1px;
+}
+
+
+.thunar .view:not(:selected) {
+	background: rgba(0, 0, 0, 0.0);
+	color: #ecf0c1;
+}
+
+.thunar {
+	background-image: url("/home/lauri/.config/gtk-3.0/astro-mona.png");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	background-size: cover;
+}
+
+.thunar treeview,
+.thunar .sidebar {
+	background-color: rgba(0, 0, 0, 0.2);
+}
